@@ -29,7 +29,7 @@ def modify(df):
   remove_units_of_measurements(df, columns)
   drop_column(df, 'torque')
 
-  medians = pd.read_csv('medians.csv').to_dict()
+  medians = pd.read_csv('https://raw.githubusercontent.com/LiyaKul/machine_learning_course/refs/heads/hw1/hw1/medians.csv').to_dict()
   nan_to_median(df, medians)
   
   float_col_to_int(df, ['engine', 'seats'])
