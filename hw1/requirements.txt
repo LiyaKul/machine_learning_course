@@ -3,6 +3,3 @@ pandas
 scikit-learn
 matplotlib
 seaborn
-ydata-profiling
-setuptools
-streamlit-ydata-profiling
