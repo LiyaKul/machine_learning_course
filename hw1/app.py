@@ -21,7 +21,7 @@ def load_model():
 
 st.title("Предсказание цен на машины")
 
-df_train = pd.read_csv('df_train.csv')
+df_train = pd.read_csv('https://raw.githubusercontent.com/LiyaKul/machine_learning_course/refs/heads/hw1/hw1/df_train.csv')
 print_eda_graphics(df_train)
 df_train.drop(['selling_price'], axis=1, inplace=True)
 st.title("Ввод данных: CSV или ручной ввод")
