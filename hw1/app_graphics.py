@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import seaborn as sns
-from ydata_profiling import ProfileReport
+# from ydata_profiling import ProfileReport
 from streamlit_ydata_profiling import st_profile_report
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -65,13 +65,13 @@ def print_heatmap(num_df):
     st.pyplot(fig_corr)
 
 
-def print_profile_report(df, df_type="train"):
-    if st.button(
-        "Сгенерировать отчёт streamlit_ydata_profiling",
-        key=f"{df_type}_profile_button",
-    ):
-        profile = ProfileReport(df, explorative=True)
-        st_profile_report(profile)
+# def print_profile_report(df, df_type="train"):
+#     if st.button(
+#         "Сгенерировать отчёт streamlit_ydata_profiling",
+#         key=f"{df_type}_profile_button",
+#     ):
+#         profile = ProfileReport(df, explorative=True)
+#         st_profile_report(profile)
 
 
 def print_eda_graphics(df, df_type="train"):
@@ -88,4 +88,4 @@ def print_eda_graphics(df, df_type="train"):
 
     print_heatmap(num_df)
 
-    print_profile_report(df, df_type)
+    # print_profile_report(df, df_type)
